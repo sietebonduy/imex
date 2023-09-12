@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ИМЕКС-ДОН</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <!-- <script src="https://api-maps.yandex.ru/v3/?apikey=3ba34c22-4da6-41df-9dc7-6c9e4a06be6b&lang=ru_RU"></script> -->
+  <script src="index.js"></script>
+</head>
+<body>
+  <div class="navbar">
+    <div class="navbar-logo">
+      <a href="#header"><img src="./assets/images/logo.svg" alt="logo"></a>
+    </div>
+    <div class="flags">
+      <img src="./assets/images/dnr-flag.svg" alt="">
+      <img src="./assets/images/rus-flag.svg" alt="">
+      <img src="./assets/images/lnr-flag.svg" alt="">
+    </div>
+    <div class="navbar-nav">
+      <ul>
+        <li class="nav-item"><a href="#about-us">О нас</a></li>
+        <li class="nav-item"><a href="#service">Услуги</a></li>
+        <li class="nav-item"><a href="#portfolio">Портфолио</a></li>
+        <li class="nav-item"><a href="#contact-us">Контакты</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="header">
+
+  </div>
+
+  <div class="about-us">
+    <div class="content">
+      <div class="text">
+        <h1>>1000 ЗАКАЗОВ<br>ЗА 4 ГОДА</h1>
+      </div>
+      <div class="text">
+        <p>Компания Имекс Дон — один из лидеров по экспорту стекла, оконных профилей и коплектующих в Ростове-на-Дону. Мы подберем для вас самое лучшее решение вашей проблемы и доставим в кратчайшие сроки.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="why-this-company">
+    <h1>Почему выбирают нас?</h1>
+  </div>
+
+  <!-- <div class="catalog">
+    <div class="card">
+      
+    </div>  
+  </div> -->
+
+
+  <div class="partners">
+    <!-- <h1>Наши партнеры</h1> -->
+    <div class="logo">
+      <a href="https://ultrasolarblock.ru"><img src="./assets/images/ultra_solar_block.png" alt="" height="55"></a>
+      <a href="https://larta.com/"><img src="./assets/images/larta_glass.svg" alt=""></a>
+      <a href="https://agcrussia.ru/"><img src="./assets/images/agc.svg" alt=""></a>
+      <a href="https://xn--80aagmthhtbendhfdjde.xn--p1ai/"><img src="./assets/images/saratov_stroy_glass.svg" alt=""></a>
+      <a href="https://www.td-bkh.ru/products/36"><img src="./assets/images/bashkir_him.png" alt="" height="80"></a>
+      <a href="https://alneoprof.ru/"><img src="./assets/images/alneoprof.png" alt=""  height="55"></a>
+      <a href="http://citylux-profile.ru/katalog.php"><img src="./assets/images/citylux.png" alt="" height="55"></a>
+      <a href="http://grunbau.com/"><img src="./assets/images/grunbau.png" alt="" height="55"></a>
+    </div>
+  </div>
+
+  <div class="contact-us">
+    <h1>Связаться с нами</h1>
+    <form action="обработчик.php" method="post">
+      <!-- <label for="name">Ваше имя:</label> -->
+      <input placeholder="Имя" type="text" id="name" name="name" required><br><br>
+  
+      <!-- <label for="email">Ваш Email:</label> -->
+      <input placeholder="Email" type="email" id="email" name="email" required><br><br>
+
+      <!-- <label for="phone">Ваш телефон:</label> -->
+      <input placeholder="" type="tel" id="phone" name="phone" required><br><br>
+  
+      <label for="message">Ваше сообщение:</label><br>
+      <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+  
+      <input type="submit" value="Отправить">
+  </form>
+  </div>
+
+  <div class="contacts">
+    <div class="content">
+      <h1>Контакты</h1>
+      <h3>Адрес</h3>
+      <p>г. Ростов-на-Дону,	пр-кт Шолохова, зд. 11 стр.3</p>
+      <h3>Телефон</h3>
+      <p>+7-928-612-37-08</p>
+      <p>226-02-61</p>	
+      <h3>Режим работы</h3>
+      <p>с 9:00 до 18:00, без обеда<br>Суббота, воскресенье — выходные дни</p>
+      <button>Связаться с нами</button>
+      <div class="icons">
+        <img src="" alt="">
+      </div>
+    </div>
+
+    <div id="map" class="map">
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae4a420e63d17e6eefc7637031dc01aa0909df8a6fcde51ce4b52309e90651b67&amp;width=600&amp;height=400&amp;lang=ru_RU&amp;scroll=true;api=3ba34c22-4da6-41df-9dc7-6c9e4a06be6b"></script>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>© 2023 Имекс Дон.</p>
+  </div>
+
+
+</body>
+</html>
