@@ -71,19 +71,11 @@
   <div class="contact-us">
     <h1>Связаться с нами</h1>
     <form action="обработчик.php" method="post">
-      <!-- <label for="name">Ваше имя:</label> -->
       <input placeholder="Имя" type="text" id="name" name="name" required><br><br>
-  
-      <!-- <label for="email">Ваш Email:</label> -->
       <input placeholder="Email" type="email" id="email" name="email" required><br><br>
-
-      <!-- <label for="phone">Ваш телефон:</label> -->
-      <input placeholder="" type="tel" id="phone" name="phone" required><br><br>
-  
-      <label for="message">Ваше сообщение:</label><br>
-      <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-  
-      <input type="submit" value="Отправить">
+      <input placeholder="999-999-99-99" type="tel" id="phone" name="phone" required><br><br>
+      <textarea placeholder="Ваше сообщение" name="message" rows="4" cols="50" required></textarea><br><br>
+      <button class="btn-form" type="submit">Отправить</button>
   </form>
   </div>
 
