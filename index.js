@@ -24,3 +24,51 @@
 //     map.addChild(new ymaps3.YMapMarker({coordinates: LOCATION.center}, el));
 
 // }
+
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  this.classList.toggle('active');
+});
+
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  document.querySelector('.menu').classList.toggle('active');
+});
+
+document.getElementById('openModal').addEventListener('click', function() {
+  document.getElementById('myModal').style.display = 'block';
+});
+
+document.getElementsByClassName('close')[0].addEventListener('click', function() {
+  document.getElementById('myModal').style.display = 'none';
+});
+
+$(".custom-carousel").owlCarousel({
+  autoWidth: true,
+  mouseDrag: false,
+  // center: true,
+  // nav: true
+  // loop: true,
+  // nav: true,
+  // responsiveClass:true,
+  // responsive:{
+  //     0:{
+  //         items:1,
+  //         nav:true
+  //     },
+  //     600:{
+  //         items:3,
+  //         nav:false
+  //     },
+  //     1000:{
+  //         items:5,
+  //         nav:true,
+  //         loop:false
+  //     }
+  // }
+});
+$(document).ready(function () {
+  $(".custom-carousel .item").click(function () {
+    $(".custom-carousel .item").not($(this)).removeClass("active");
+    $(this).toggleClass("active");
+    console.log('hello')
+  });
+});

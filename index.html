@@ -4,16 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ИМЕКС-ДОН</title>
-  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <!-- <script src="https://api-maps.yandex.ru/v3/?apikey=3ba34c22-4da6-41df-9dc7-6c9e4a06be6b&lang=ru_RU"></script> -->
-  <script src="index.js"></script>
 </head>
 <body>
   <div class="navbar">
     <div class="navbar-logo">
       <a href="#header"><img src="./assets/images/logo.svg" alt="logo"></a>
     </div>
-    <div class="flags">
+    
+    <div class="menu-toggle">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <ul class="menu">
+      <li><a href="#">Пункт 1</a></li>
+      <li><a href="#">Пункт 2</a></li>
+      <li><a href="#">Пункт 3</a></li>
+    </ul>
+    <!-- <div class="flags">
       <img src="./assets/images/dnr-flag.svg" alt="">
       <img src="./assets/images/rus-flag.svg" alt="">
       <img src="./assets/images/lnr-flag.svg" alt="">
@@ -25,7 +38,7 @@
         <li class="nav-item"><a href="#portfolio">Портфолио</a></li>
         <li class="nav-item"><a href="#contact-us">Контакты</a></li>
       </ul>
-    </div>
+    </div> -->
   </div>
 
   <div class="header">
@@ -47,11 +60,48 @@
     <h1>Почему выбирают нас?</h1>
   </div>
 
-  <!-- <div class="catalog">
-    <div class="card">
-      
-    </div>  
-  </div> -->
+  <div class="production">
+    <h1>Мы поставляем</h1>
+    <div class="owl-carousel custom-carousel owl-theme">
+      <div class="item active" style="background-image: url(./assets/images/al_profil.png);">
+        <div class="item-desc">
+          <h3>Алюминеевые профили</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eveniet nulla a quia aut maxime error ea quasi eius voluptate minus nobis dolor soluta quidem, eum sed officiis, laborum necessitatibus.</p>
+          <button>Подробнее</button>
+         </div>
+      </div>
+      <div class="item" style="background-image: url(./assets/images/profil-pvh.jpg);">
+        <div class="item-desc">
+          <h3>Оконные ПВХ профили</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam autem magnam eveniet officia, iure, id ad inventore dicta labore repellat architecto, excepturi voluptas praesentium odit natus quibusdam cupiditate nam saepe?</p>
+          <button>Подробнее</button>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(./assets/images/listovoe_steklo.jpg);">
+        <div class="item-desc">
+          <h3>Листовое стекло</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eveniet obcaecati nobis et autem vero non ipsum, sed ut reprehenderit vitae ipsam dicta libero ullam quasi. Veritatis ea incidunt voluptatem.</p>
+          <button>Подробнее</button>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(./assets/images/pvh-c1.jpg);">
+        <div class="item-desc">
+          <h3>ПВХ-С</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ut fugit, in suscipit molestiae laudantium natus corporis, praesentium doloribus cupiditate, architecto voluptatem numquam excepturi autem ab repellendus reprehenderit ratione! Debitis.</p>
+          <button>Подробнее</button>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(./assets/images/plenka1.jpg);">
+        <div class="item-desc">
+          <h3>Пленки для стекла</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut labore commodi voluptate dignissimos, voluptas hic corporis architecto. Perferendis natus, aperiam adipisci saepe dolore ipsum iure? Accusamus quas unde hic repellat?</p>
+          <button>Подробнее</button>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+  </div>
 
 
   <div class="partners">
@@ -68,17 +118,6 @@
     </div>
   </div>
 
-  <div class="contact-us">
-    <h1>Связаться с нами</h1>
-    <form action="обработчик.php" method="post">
-      <input placeholder="Имя" type="text" id="name" name="name" required><br><br>
-      <input placeholder="Email" type="email" id="email" name="email" required><br><br>
-      <input placeholder="999-999-99-99" type="tel" id="phone" name="phone" required><br><br>
-      <textarea placeholder="Ваше сообщение" name="message" rows="4" cols="50" required></textarea><br><br>
-      <button class="btn-form" type="submit">Отправить</button>
-  </form>
-  </div>
-
   <div class="contacts">
     <div class="content">
       <h1>Контакты</h1>
@@ -89,7 +128,7 @@
       <p>226-02-61</p>	
       <h3>Режим работы</h3>
       <p>с 9:00 до 18:00, без обеда<br>Суббота, воскресенье — выходные дни</p>
-      <button>Связаться с нами</button>
+      <button id="openModal">Связаться с нами</button>
       <div class="icons">
         <img src="" alt="">
       </div>
@@ -101,9 +140,27 @@
   </div>
 
   <div class="footer">
-    <p>© 2023 Имекс Дон.</p>
+    <p>© 2023 ООО "Имекс-Дон".</p>
   </div>
 
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+          <div class="contact-form">
+            <h1>Связаться с нами</h1>
+            <form action="обработчик.php" method="post">
+              <input placeholder="Имя" type="text" id="name" name="name" required><br><br>
+              <input placeholder="Email" type="email" id="email" name="email" required><br><br>
+              <input placeholder="999-999-99-99" type="tel" id="phone" name="phone" required><br><br>
+              <textarea placeholder="Ваше сообщение" name="message" rows="4" cols="50" required></textarea><br><br>
+              <button class="btn-form" type="submit">Отправить</button>
+           </form>
+          </div>
+      </div>
+  </div>
 
+  <script src="./jquery.js"></script>
+  <script src="./owl.carousel.min.js"></script>
+  <script src="index.js"></script>
 </body>
-</html>
+</html> 
